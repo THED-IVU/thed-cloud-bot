@@ -1,0 +1,53 @@
+<!-- 📁 Fichier : popup_template.html (avec animation d'entrée) -->
+<div id="popup_signal_ia" style="
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 2px solid #00f7ff;
+  border-radius: 12px;
+  padding: 16px;
+  width: 320px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 16px #00f7ff;
+  backdrop-filter: blur(4px);
+  animation: fadeSlideIn 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+">
+
+  <style>
+    @keyframes fadeSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <h3 style="margin-top: 0; color: #00f7ff;">⚡ Signal IA détecté</h3>
+
+  <p><strong>🔼 Direction :</strong> <span id="dir">—</span></p>
+  <p><strong>📊 Score :</strong> <span id="score">—</span>%</p>
+  <p><strong>📌 Contexte :</strong> <span id="contexte">—</span></p>
+  <p><strong>🧠 Résumé :</strong><br><span id="resume">—</span></p>
+  <p><strong>📉 Fondamental :</strong><br><span id="fondamental">—</span></p>
+  <p><strong>💰 Mise :</strong> <span id="mise">—</span> – 
+     <strong>⏱️ Durée :</strong> <span id="duree">—</span></p>
+
+  <button id="validerBtn" style="
+    margin-top: 12px;
+    padding: 10px 16px;
+    background-color: #00c853;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+  ">
+    ✅ Valider ce signal
+  </button>
+</div>

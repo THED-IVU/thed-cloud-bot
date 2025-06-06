@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>THED Bot</title></head>
+<body>
+    <h3>Envoyer Trade</h3>
+    <button id="send">Exécuter</button>
+    <script>
+        document.getElementById("send").addEventListener("click", () => {
+            const data = {
+                type: "EXECUTE_TRADE",
+                data: {
+                    symbol: "EURUSD",
+                    direction: "UP",
+                    mise: 10,
+                    duree: 60,
+                    contexte: "Range"
+                }
+            };
+            chrome.runtime.sendMessage(data);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+@echo off
+cd /d D:\DOCUMENTATION\PROFESSIONNEL\2025\MES PRODUITS 2025 A VENDRE\BOT_MT5_THED_PRO\jobs
+python email_cron.py
+pause

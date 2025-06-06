@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "THED IVU BOT – IA Popups + Executor",
+  "version": "1.0",
+  "description": "Extension intelligente pour IA Popups, Scan visuel et exécution connectée à l’API locale",
+  "permissions": [
+    "scripting",
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://po.trade/*",
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "webSocket_listener.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://po.trade/*"],
+      "js": ["injector.js", "popup_manager.js", "scan_overlay.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "popup_script.js",
+        "popup_template.html"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,810 @@
+[
+  {
+    "fichier": "./1_Dashboard.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./1_Dashboard_mobile.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./ai.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./app1.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./app_config.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./auto_ajust.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./backtest.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./check_flask.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./client_dash_realtime.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./client_dash_web.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./config.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./config_guardian.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./config_state.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./dashboard.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./db.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./fallback_ia_cloud.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./firebase_logger.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian_dashboard.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./guardian_launcher.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./historique.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./ia_alerts.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_storage.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_strategique.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./learning_tracker.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./load_env.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./main.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./main_launcher.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./rapport_auto.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./realtime_server.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./render_launcher.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./report_auto.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./runtime_config.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./run_config_backup.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./run_weekly_report.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./run_weekly_report_plus.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./scanner.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./scanner_page.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./sign_extension.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./simulateur_injection.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./streamlit_ui.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./streamlit_ui_launcher.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./telegram_bot.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./test_runner.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./test_runner_prod.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./trading.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./utils.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./utils_ui.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./web_crawler_fondamental.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ws_secure_trade_server.py",
+    "status": "à corriger"
+  },
+  {
+    "fichier": "./__init__.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./api/ia_bot_api.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./api/strategie_breakout_news.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./api/tradingview_webhook.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./api/webhook_api.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./api_connectors/binance_connector.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./api_connectors/kucoin_connector.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./components/extension_historique_et_cloture.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/ai_guardian.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/alert_bot.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/calendar_api.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/candlestick_patterns.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/cloud_sync.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/config_secure.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./core/context_detector.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/core_bot.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/core_bot_backup.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/event_guard.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/export_stats.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./core/feedback_evaluator.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/fibo_utils.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/firebase_logger.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/firebase_storage.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/firebase_sync.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/forex_manager.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/ia_autocorrect.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/ia_config_backup.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/ia_contextes.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./core/ia_corrector.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/ia_fondamentaux.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./core/ia_patterns.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./core/ia_tauxreussite.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./core/indicators.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/indicators_calculator.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/learning_tracker.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/log_history.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/news_fetcher.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/order_blocks.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/pattern_influence.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/pattern_recognition.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/pocket_executor.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/pocket_executor_forex.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/pocket_interface_manager.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/popup_handler.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/predictor_ia.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/rapport_auto.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/rapport_ia.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/risk_manager.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/sentiment_aggregator.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/session_manager.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/strategie_breakout_news.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/strategie_ema_rsi.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/strategie_fibo_bougies.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/strategie_heikin_psar.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/strategie_sniper_ia.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/trade_filter.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/trading_mt5.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/trading_MTX.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./core/tests/backtest_multistrat.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/7_Guardian_IA_Control.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./guardian/guardian_analyzer.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/guardian_auto_fix.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./guardian/guardian_coder_interface.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/guardian_config.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/guardian_executor.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/guardian_multi_validate.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./guardian/guardian_organizer.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/guardian_reporter.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/guardian_scanner.py",
+    "status": "à corriger"
+  },
+  {
+    "fichier": "./guardian/guardian_scheduler.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/guardian_suggestions.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/guardian_sync.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./guardian/guardian_updater.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_bot_api/analyseur.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_bot_api/feedback_evaluator.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_bot_api/learning_model.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_bot_api/main.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_bot_api/memory_tracker.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_bot_api/web_scraper_trading.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_bot_api/pages/2_Validation_IA.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./ia_bot_api/pages/3_Feedback_IA.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./ia_bot_api/pages/4_Apprentissage_IA.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./jobs/telegram_cron.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./notifications/email_cron.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./notifications/email_telegram_cron.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./notifications/get_chat_id.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./notifications/telegram_alert.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./notifications/telegram_bot.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./notifications/test_alert.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/0_Home.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/10_Gestionnaire_Maj_Guardian.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/11_Configurer_Cles_IA.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/12_Analyse_IA_Strategique.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/13_Explorateur_Analyses_IA.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./pages/14_Tester_Alerte_IA.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/14_Tests_Fonctions_IA.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/1_Dashboard_d_mobile.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/2_Dashboard_IA_plus.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/2_Trading_Auto.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/3_Configuration_API.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/6_MultiPlatform_Connect.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/6_PocketOption_Copilote_FINAL.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/7_Executer_Trades_IA_Complete.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./pages/7_Executer_Trades_Valides_IA_Check_Complete.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./pages/7_Guardian_IA_Control.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/7_Historique_Trades.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./pages/8_TIB_Guardian_Central.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/9_Planificateur_Guardian.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/9_TIB_Guardian_Popups.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Admin_IA.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Admin_IA_Config.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Admin_IA_Contextes.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Admin_IA_Corrective.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Admin_IA_Heatmap.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Admin_IA_Memory.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Admin_IA_Patterns.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Admin_IA_Stats.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Admin_IA_TauxReussite.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Dashboard_IA_Resultats.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/firebase_signal_monitor.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/historique_ia_patterns.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/live_bot.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./pages/live_bot_ws_cloud.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./pages/live_bot_ws_cloud_test_button.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./pages/live_bot_ws_updated.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./pages/page_firebase_dashboard_complet.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/Rapport_IA.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./pages/streamlit_affichage_trades.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./strategies/strategie_candles.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./streamlit/3_Configuration_API.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./streamlit/5_Cloture_Manuelle.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./streamlit/streamlit_visualisation.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./streamlit/pages/1_Dashboard.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./streamlit/pages/2_Backtest_MultiStrat.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./streamlit/pages/3_Backtest_Viewer.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./streamlit/pages/3_simulation_rapide.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./streamlit/pages/4_IA_Learning_Center.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./streamlit_pages/7_Simulateur_MultiGraphiques.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./tests/ping_alert.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./tests/test_integration.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./utils/alert_bot.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./utils/git_sync.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./utils/learning_tracker.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./utils/path_utils.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./utils/__init__.py",
+    "status": "vide"
+  },
+  {
+    "fichier": "./websocket/api_flask_trade.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./websocket/client_dash_realtime.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./websocket/realtime_server.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./websocket/streamlit_ws_dashboard.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./websocket/websocket_sender_ui.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./websocket/ws_signal_tester.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./websocket/ws_trade_receiver.py",
+    "status": "ok"
+  },
+  {
+    "fichier": "./websocket/ws_trade_sender.py",
+    "status": "ok"
+  }
+]

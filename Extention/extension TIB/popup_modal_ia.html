@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Popup IA – Recommandation</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #333;
+      --accent: #0e76a8;
+      --block-bg: #eef2f5;
+      --success: #4CAF50;
+      --warn: #B22222;
+      --button-bg: #ffa500;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1e1e1e;
+        --text: #ddd;
+        --accent: #62b0ff;
+        --block-bg: #2b2b2b;
+        --success: #69f0ae;
+        --warn: #ff6e6e;
+        --button-bg: #ff9800;
+      }
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #555;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--accent);
+    }
+
+    .section {
+      margin-bottom: 15px;
+    }
+
+    .score {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: var(--success);
+    }
+
+    .direction {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: var(--warn);
+    }
+
+    .résumé {
+      background: var(--block-bg);
+      padding: 10px;
+      border-left: 4px solid var(--accent);
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+
+    .parametres {
+      font-size: 1em;
+      margin-top: 10px;
+      background-color: var(--block-bg);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #validerBtn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: var(--button-bg);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    #validerBtn:hover {
+      background-color: #e68a00;
+    }
+
+    #status {
+      font-size: 12px;
+      margin-top: 8px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📊 Recommandation IA</h2>
+
+  <div class="section">
+    <div class="score">Score IA : <span id="iaScore">–</span></div>
+    <div class="direction">Direction suggérée : <span id="iaDirection">–</span></div>
+  </div>
+
+  <div class="section résumé">
+    <strong>Résumé Technique :</strong><br>
+    <span id="resumeTechnique">Chargement...</span>
+  </div>
+
+  <div class="section résumé">
+    <strong>Résumé Fondamental :</strong><br>
+    <span id="resumeFondamentale">Chargement...</span>
+  </div>
+
+  <div class="parametres">
+    💰 Paramètres proposés :<br>
+    Mise / Lot : <strong id="paramMise">–</strong><br>
+    Durée / TP : <strong id="paramDuree">–</strong>
+  </div>
+
+  <button id="validerBtn">✅ Valider manuellement (simulation)</button>
+
+  <div id="status">Mode : <span id="currentMode">TEST</span></div>
+
+  <script src="popup_script.js"></script>
+</body>
+</html>

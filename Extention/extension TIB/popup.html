@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>THED IVU BOT</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      width: 280px;
+      padding: 10px;
+      background: #f4f6f8;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    button {
+      padding: 10px;
+      width: 100%;
+      background: #2962ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0039cb;
+    }
+    .status {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h3>🚀 THED IVU BOT</h3>
+  <p>Clique pour exécuter une analyse IA stratégique :</p>
+  <button id="analyzeBtn">Lancer l’analyse</button>
+
+  <p>Envoyer un trade test :</p>
+  <button id="send">Exécuter</button>
+
+  <div class="status" id="statusText">Prêt</div>
+
+  <script>
+    // Bouton "Lancer l’analyse"
+    document.getElementById("analyzeBtn").addEventListener("click", () => {
+      document.getElementById("statusText").innerText = "🧠 Analyse IA en cours...";
+      // Exemple d'envoi de message (à adapter selon le listener en background)
+      chrome.runtime.sendMessage({ type: "ANALYSE_IA" }, (response) => {
+        document.getElementById("statusText").innerText = response?.message || "✅ Analyse terminée.";
+      });
+    });
+
+    // Bouton "Exécuter" un trade simulé
+    document.getElementById("send").addEventListener("click", () => {
+      const data = {
+        type: "EXECUTE_TRADE",
+        data: {
+          symbol: "EURUSD",
+          direction: "UP",
+          mise: 10,
+          duree: 60,
+          contexte: "Range"
+        }
+      };
+      chrome.runtime.sendMessage(data, (response) => {
+        document.getElementById("statusText").innerText = response?.message || "✅ Trade envoyé.";
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: ia-bot-THED
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: streamlit run main_launcher.py --server.port=8080
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+
+  - type: web
+    name: tib-ws-ia
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python render_launcher.py"
+    autoDeploy: true
+    envVars:
+      - key: FIREBASE_URL
+        value: https://your-app.firebaseio.com/logs.json
