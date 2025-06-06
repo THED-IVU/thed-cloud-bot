@@ -1,0 +1,19 @@
+
+{
+  "manifest_version": 3,
+  "name": "THED IVU Trade Trigger",
+  "version": "1.0",
+  "description": "Extension pour recevoir les signaux IA et exécuter les trades sur Pocket Option.",
+  "permissions": ["scripting", "activeTab", "tabs", "storage"],
+  "host_permissions": ["http://localhost:8000/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "THED IVU Bot",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

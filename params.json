@@ -1,0 +1,9 @@
+{
+  "RSI_length": 14,
+  "MACD_fast": 12,
+  "MACD_slow": 26,
+  "SMA_short": 20,
+  "SMA_long": 50,
+  "TP": 0.002,
+  "SL": 0.001
+}

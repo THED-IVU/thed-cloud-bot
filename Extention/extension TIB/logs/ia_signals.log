@@ -1,0 +1,5 @@
+# Journal des signaux IA exécutés (format JSON)
+# Chaque ligne = un signal JSON envoyé en WebSocket et exécuté par l'extension
+
+# Exemples de lignes à venir :
+# {"datetime": "2025-05-30T14:45:00", "symbol": "EURUSD", "direction": "up", "confiance": 87, "contexte": "Hausse forte", "mise": 10, "duree": 60, "mode": "auto"}

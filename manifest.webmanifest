@@ -1,0 +1,22 @@
+{
+  "name": "THED_IVU_BOT \u2013 Interface Mobile+Vocale",
+  "short_name": "THED_IVU_BOT",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "description": "Assistant de trading IA \u2013 mobile + commande vocale int\u00e9gr\u00e9e.",
+  "icons": [
+    {
+      "src": "static/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "static/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

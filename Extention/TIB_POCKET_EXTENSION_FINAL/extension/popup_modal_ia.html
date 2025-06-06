@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Analyse IA – Fenêtre active</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      width: 300px;
+      color: #333;
+    }
+    h3 {
+      color: #0066cc;
+      margin-top: 0;
+    }
+    .mode {
+      font-weight: bold;
+      color: #ff6600;
+    }
+    .data-block {
+      background-color: #eef2f5;
+      padding: 10px;
+      margin-top: 10px;
+      border-left: 4px solid #2196F3;
+      border-radius: 6px;
+    }
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+    #validerBtn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    #validerBtn:hover {
+      background-color: #45a049;
+    }
+    #status {
+      font-size: 12px;
+      margin-top: 8px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>📡 Analyse IA Active</h3>
+
+  <div class="data-block">
+    <div><span class="label">Mode détecté :</span> <span id="modeTrading">⏳</span></div>
+    <div><span class="label">Direction :</span> <span id="iaDirection">–</span></div>
+    <div><span class="label">Score IA :</span> <span id="iaScore">–</span></div>
+    <div><span class="label">Contexte :</span> <span id="iaContext">–</span></div>
+    <div><span class="label">Durée :</span> <span id="iaDuree">–</span></div>
+    <div><span class="label">SL / TP :</span> <span id="iaSLTP">–</span></div>
+    <div><span class="label">Stratégie :</span> <span id="iaStrategie">–</span></div>
+  </div>
+
+  <p id="iaResume" style="margin-top:10px; font-size:13px;"></p>
+
+  <button id="validerBtn">✅ Valider le Trade</button>
+
+  <div id="status">Mode actuel : <span id="currentMode">TEST</span></div>
+
+  <script>
+    // 🔧 Simulation : on imagine que le signal est injecté dynamiquement depuis Streamlit ou WebSocket
+    const signal = window.signalFromBot || {
+      direction: "up",
+      score: 87,
+      contexte: "Retournement haussier",
+      duree: 60,
+      stop: 0.5,
+      tp: 1.0,
+      strategie: "EMA + RSI",
+      resume: "L’actif a rebondi sur une zone de support + RSI croisé au-dessus de 50."
+    };
+
+    // ⚙️ Détection automatique du mode de trading
+    function detectMode() {
+      const url = window.location.href;
+      if (url.includes("/quick-high-low")) return "binaire";
+      if (url.includes("/mt5") || url.includes("/mt4")) return "forex";
+      return "indéterminé";
+    }
+
+    // ⏱️ Remplissage dynamique
+    document.getElementById("modeTrading").innerText = detectMode();
+    document.getElementById("iaDirection").innerText = signal.direction?.toUpperCase();
+    document.getElementById("iaScore").innerText = `${signal.score || "?"} %`;
+    document.getElementById("iaContext").innerText = signal.contexte || "–";
+    document.getElementById("iaDuree").innerText = `${signal.duree || 60}s`;
+    document.getElementById("iaSLTP").innerText = `SL: ${signal.stop || 0} / TP: ${signal.tp || 0}`;
+    document.getElementById("iaStrategie").innerText = signal.strategie || "–";
+    document.getElementById("iaResume").innerText = signal.resume || "";
+
+    // 🔁 Charger le mode TEST/RÉEL
+    chrome.storage.local.get(["isRealMode"], (result) => {
+      const isReal = result.isRealMode || false;
+      document.getElementById("currentMode").innerText = isReal ? "RÉEL" : "TEST";
+    });
+
+    // ✅ Envoi via WebSocket global (ou lancement via launchAutoTrade)
+    document.getElementById("validerBtn").addEventListener("click", () => {
+      const msg = {
+        type: "SIGNAL_FROM_POPUP",
+        payload: signal
+      };
+
+      // Méthode 1 : via WebSocket local (optionnel)
+      const ws = new WebSocket("ws://localhost:8765");
+      ws.onopen = () => ws.send(JSON.stringify(signal));
+
+      // Méthode 2 : via background script → contenu → launchAutoTrade()
+      chrome.runtime.sendMessage(msg, (response) => {
+        console.log("🛰️ Signal transmis au bot :", response);
+        alert("🚀 Trade déclenché !");
+      });
+    });
+  </script>
+
+</body>
+</html>

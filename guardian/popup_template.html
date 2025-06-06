@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Popup IA</title>
+  <style>
+    :root {
+      --bg: #1c1c1c;
+      --text: #fff;
+      --accent: #00f7ff;
+      --button: #ffa500;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 10px;
+      width: 300px;
+    }
+
+    h4 {
+      margin: 0 0 10px 0;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 6px 0;
+    }
+
+    button {
+      background: var(--button);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-top: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background: #ff8800;
+    }
+  </style>
+</head>
+<body>
+
+  <h4>📊 Signal IA (<span id="dir">–</span>)</h4>
+  <p><strong>Score :</strong> <span id="score">–</span>%</p>
+  <p><strong>Contexte :</strong> <span id="contexte">–</span></p>
+  <p><strong>Résumé :</strong> <em id="resume">Chargement...</em></p>
+  <p><strong>Fondamental :</strong> <em id="fondamental">–</em></p>
+  <p><strong>Mise :</strong> <span id="mise">–</span> – <strong>Durée :</strong> <span id="duree">–</span></p>
+
+  <button id="validerBtn">✅ Valider manuellement</button>
+
+</body>
+</html>
