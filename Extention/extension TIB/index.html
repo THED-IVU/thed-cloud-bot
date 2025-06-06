@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>THED_IVU_BOT PWA</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#0f172a">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; text-align: center; }
+    #install-btn { padding: 1rem; background: #0f172a; color: white; border: none; border-radius: 8px; font-size: 1.1rem; cursor: pointer; display: none; }
+  </style>
+</head>
+<body>
+  <h1>🤖 Bienvenue sur la version PWA du <br> <strong>THED_IVU_BOT</strong></h1>
+  <p>Cette page est conçue pour être installée comme une application mobile.</p>
+
+  <ol style="text-align: left; display:inline-block; margin: 1rem auto;">
+    <li>Sur mobile, ouvre ce lien dans Chrome ou Opera</li>
+    <li>Tu verras un bouton ci-dessous si l'installation est possible</li>
+    <li>Sinon, utilise “Ajouter à l’écran d’accueil” depuis le menu ⋮</li>
+  </ol>
+
+  <button id="install-btn">📲 Installer maintenant</button>
+
+  <script>
+    let deferredPrompt;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      document.getElementById('install-btn').style.display = 'inline-block';
+    });
+
+    document.getElementById('install-btn').addEventListener('click', () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('✅ PWA installée');
+          } else {
+            console.log('❌ Installation refusée');
+          }
+          deferredPrompt = null;
+        });
+      }
+    });
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service_worker.js', { scope: './' })
+        .then((registration) => {
+          console.log('✅ Service Worker enregistré :', registration.scope);
+        })
+        .catch((error) => {
+          console.log('❌ Erreur enregistrement Service Worker :', error);
+        });
+    }
+  </script>
+</body>
+</html>
